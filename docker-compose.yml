@@ -2,7 +2,7 @@ version: '2.1'
 
 services:
   zoo1:
-    image: zookeeper:3.4.9
+    image: zookeeper:3.5.9
     hostname: zoo1
     ports:
       - "2181:2181"
@@ -15,7 +15,7 @@ services:
       - ./zk-multiple-kafka-multiple/zoo1/datalog:/datalog
 
   zoo2:
-    image: zookeeper:3.4.9
+    image: zookeeper:3.5.9
     hostname: zoo2
     ports:
       - "2182:2182"
@@ -28,7 +28,7 @@ services:
       - ./zk-multiple-kafka-multiple/zoo2/datalog:/datalog
 
   zoo3:
-    image: zookeeper:3.4.9
+    image: zookeeper:3.5.9
     hostname: zoo3
     ports:
       - "2183:2183"
